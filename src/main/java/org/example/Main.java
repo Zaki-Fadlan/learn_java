@@ -238,6 +238,12 @@ public class Main {
             System.out.println(i);
         }
          */
+        String[][] car = {{"Supra", "Lamborghini", "Ferrari"}, {"Supra", "Lamborghini", "Ferrari"}};
+        for (String[] i : car) {
+            for (String j : i) {
+                System.out.println(j);
+            }
+        }
 
 
     }
