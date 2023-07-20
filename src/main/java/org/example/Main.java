@@ -28,6 +28,10 @@ public class Main {
         char isThisChar = 'C';
         float isThisFloat = 8.99f;
         double isThisDouble = 8.99;
+        /* Numeric Type have two categories :
+            Integer : byte,short,int,long
+            floating point types : float,double
+        */
 
         //      Non-Primitive : String, Array etc
         String isThisString = "Hellow World!";
@@ -44,6 +48,44 @@ public class Main {
         //      Narrow
         double myDoubles = 9.0;
         int myInts = (int) myDoubles;
+
+        /* Java String :
+            string.length(), string.toUpperCase(), string.toLowerCase(), string.indexOf()
+        */
+        String myString = "Hello World";
+//        System.out.println(myString.length());
+//        System.out.println(myString.toUpperCase());
+//        System.out.println(myString.toLowerCase());
+//        System.out.println(myString.indexOf('H'));
+
+        // Concatenation Sring
+        String firstName = "Zaki";
+        String lastName = " Fadlan";
+//        System.out.println(firstName.concat(lastName));
+//        System.out.println(firstName + lastName);
+//        System.out.println(firstName + myInts + myInt);
+        int intConcat = 10;
+        int intConcats = 10;
+//        System.out.println(firstName + (intConcat + intConcats));
+//        Special char \' , \" , \\ , \n , \b , \r , \t , \f
+        String specialChar = "\'Hello World\'!! \n\tthis is \"special\" character\b";
+//        System.out.println(specialChar);
+
+//        Java Operator :Arithmetic , Assignment, Comparasion, Logical, Bitwise
+//        Arithmetic : +, -, *, /, %, ++, --
+//        System.out.println("Example = " + (15 % 7));
+//        intConcat++;
+//        System.out.println(intConcat);
+//        Assignment : =, +=, -=, *=, /=, %/, &=, |=, ^=, >>=, <<=
+        int myX = 10;
+        myX ^= 4;
+//        System.out.println(myX);
+//        Comparasion : (==, !=, >, <, >=, <=) it's return true or false;
+        int compX = 4;
+        int compY = 4;
+//        System.out.println(compX != compY);
+//        Logical: && , ||, !
+//        System.out.println(!(compX == compY));
 
     }
 }
