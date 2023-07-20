@@ -87,5 +87,80 @@ public class Main {
 //        Logical: && , ||, !
 //        System.out.println(!(compX == compY));
 
+//        Conditionals : if...else, switch, while loop, for loop, break/continue
+        /*  if ... else
+            * if statement
+                syntax : if (condition){ block condition to execute if true}
+            * else statement
+                syntax : if (condition){ block condition to execute if true}else{ block condition to execute if statement false }
+            * else if statement
+                syntax : if (condition1){ block condition to execute if true}else if (condition2){ block condition1 false and condition2 is true}else{ block condition to execute if statement false }
+        */
+       /* if (5 > 2) {
+            System.out.println("this if statement ... ");
+        }
+
+        int firstState = 5;
+        int secondState = 4;
+        if (firstState < secondState) {
+            System.out.println("This if else statement when if true");
+        } else {
+            System.out.println("this if else statement whe if false");
+        }
+
+        if (firstState < secondState) {
+            System.out.println("This if else statement when if true");
+        } else if (firstState > secondState) {
+            System.out.println("condition1 getfalse and condition2 is true");
+        } else {
+            System.out.println("this if else statement whe if false");
+        }
+        */
+
+//        Short Hand
+        /*
+            syntax : variable = (condition) ? expressionTrue :  expressionFalse;
+            if more than one condition :
+            syntax : variable = (condition1) ? expressionTrue1 : (condition2) ? expressionTrue2 : (condition3) ? expressionTrue3 : expressionFalse;
+
+        int firstState = 1;
+        int secondState = 1;
+        String resultShortHandIfElse = (firstState > secondState) ? "short hand true" : "short hand false";
+        String resultShortHandIfElse = (firstState > secondState) ? "Condition 1 true a > b" : (firstState < secondState) ? "Condition 2 true a < b" : "No One True";
+        System.out.println(resultShortHandIfElse);
+
+        */
+
+        /* Switch
+            switch(expression) {
+              case x:
+                // code block
+                break;
+              case y:
+                // code block
+                break;
+              default:
+                // code block
+            }
+         */
+        /*int mySwitch = 4;
+        switch (mySwitch) {
+            case 1:
+                System.out.println("myswitch is 1");
+                break;
+            case 2:
+                System.out.println("myswitch is 2");
+                break;
+            case 3:
+                System.out.println("myswitch is 3");
+                break;
+            case 4:
+                System.out.println("myswitch is 4");
+                break;
+            default:
+                System.out.println("Invalid Switch");
+        }
+         */
+
     }
 }
