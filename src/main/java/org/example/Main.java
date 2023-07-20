@@ -162,5 +162,83 @@ public class Main {
         }
          */
 
+       /*
+      Java Loop
+      * While Loop
+          while(condition){
+            block code
+          }
+        example :
+            int i = 0;
+            while (i < 5) {
+                System.out.println(i);
+                i++;
+            }
+      * Foor Loop
+          for (statement 1; statement 2; statement 3) {
+              // code block to be executed
+            }
+            statment 1 = executed one time;
+            statment 2 = defines the condition for executing the code block;
+            statment 3 = executed every loop;
+
+          example :
+           for (int i = 0; i < 5; i++) {
+                System.out.println(i);
+            }
+       * Nested Loop
+            loop in loop
+            for (int i = 0; i < 5; i++) {
+                System.out.println("-parent / outer loop");
+                for (int j = 0; j < 2; j++) {
+                    System.out.println("--child / inner loop");
+                }
+        }
+        * For-Each Loop
+            * Exclusive for Array
+            for (type variableName : arrayName) {
+              // code block to be executed
+            }
+            example :
+            String[] motor = {"Yamaha", "Kawasaki", "Honda"};
+            for (String i : motor) {
+                System.out.println(i);
+            }
+        */
+
+        /*
+        Java Break/Continue
+        *Break = jump out to next code
+        for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                break;
+            }
+            System.out.println(i);
+        }
+        *Continue = Skipping
+         for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+                continue;
+            }
+            System.out.println(i);
+        }
+         */
+
+        /*
+        Array
+        Store multiple values in a single variable
+        syntax : datatype[] variableName = {value1, value2,...., valuen};
+        example : String[] car = {"Supra", "Lamborghini", "Ferrari"};
+        *Acces element in array:
+        System.out.println(car[0]);
+        car[0] = "Volvo";
+        System.out.println(car[0]);
+        System.out.println(car.length);
+        for (String i : car) {
+            System.out.println(i);
+        }
+         */
+
+
     }
 }
