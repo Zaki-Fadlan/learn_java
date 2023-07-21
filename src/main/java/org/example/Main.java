@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.exam.Phone;
+import org.example.exam.Product;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -40,6 +43,17 @@ public class Main {
 //        District myDistrict = new District();
 
 //        System.out.println(myDistrict.districtName);
+//
+//        Animal myDog = new Dog(); // this polymorphism
+//        System.out.println(myDog.price(20, 5000000));
+//        myDog.animalSound();
+
+        // Exam Polymorphism
+        Product myProduct = new Product("Bamboo", 12000, "Have 12 cm Diameter");
+//        myProduct.showInfo();
+        Product myPhone = new Phone("Samsung A33", +300, "this phose is very strong", 12);
+        myPhone.showInfo();
+
     }
 
 //    public void mySecondMethod() {

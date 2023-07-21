@@ -7,10 +7,21 @@ public class Animal {
     //    String eat;
     private String animalName;
     private String species;
-    private int animalAge;
-    private int animalMaxAge;
-    private String animalAgeType;
-    private Long animalPrice;
-    private String foodName;
-    private int amountOnceEat;
+
+    public void animalSound() {
+        System.out.println("Animal Make Sound");
+    }
+
+    public int price(int age, int adultPrice) {
+        return adultPrice / age;
+    }
+
+}
+
+// inheritance
+class Dog extends Animal {
+    @Override
+    public void animalSound() {
+        System.out.println("Woof woof");
+    }
 }
