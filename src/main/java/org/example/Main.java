@@ -1,28 +1,38 @@
 package org.example;
 
-public class Main extends Thread {
-    String message;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
 
-    public Main(String message) {
-        this.message = message;
-    }
+public class Main {
 
     public static void main(String[] args) {
-        Main thread1 = new Main("Thread 1");
-        Main thread2 = new Main("Thread 2");
+        try {
+            // Membuat server socket pada port 12345
+            ServerSocket serverSocket = new ServerSocket(12345);
+            System.out.println("Server berjalan, menunggu koneksi...");
 
-        thread1.start();
-        thread2.start();
-    }
+            // Menerima koneksi dari client
+            Socket socket = serverSocket.accept();
+            System.out.println("Koneksi dari client diterima.");
 
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println(message + ": " + i);
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            // Membaca data dari client
+            BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String message = reader.readLine();
+            System.out.println("Pesan dari client: " + message);
+
+            // Mengirim balasan ke client
+            PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
+            writer.println("Pesan diterima.");
+
+            // Menutup koneksi
+            socket.close();
+            serverSocket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
